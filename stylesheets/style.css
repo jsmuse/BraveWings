@@ -1,0 +1,844 @@
+/* line 1, ../sass/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #27292C;
+  background-image: url("../img/Big BG.png");
+  color: #ffffff;
+  font-family: 'Space Mono', monospace;
+}
+
+/* line 9, ../sass/style.scss */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**   BG   **/
+/* line 16, ../sass/style.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* line 22, ../sass/style.scss */
+.animateme {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* line 32, ../sass/style.scss */
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* line 40, ../sass/style.scss */
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #34373B;
+  bottom: 60px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  opacity: 0;
+}
+
+/* line 55, ../sass/style.scss */
+.bg-bubbles li:nth-child(1) {
+  left: 3%;
+  border-radius: 50em;
+  background: transparent;
+  border: 4px solid #34373B;
+}
+
+/* line 61, ../sass/style.scss */
+.bg-bubbles li:nth-child(2) {
+  left: 6%;
+  width: 75px;
+  height: 75px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+  animation-duration: 17s;
+}
+
+/* line 70, ../sass/style.scss */
+.bg-bubbles li:nth-child(3) {
+  left: 15%;
+  width: 175px;
+  height: 175px;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+/* line 77, ../sass/style.scss */
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-duration: 22s;
+  animation-duration: 22s;
+}
+
+/* line 84, ../sass/style.scss */
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+  background: transparent;
+  border: 4px solid #34373B;
+}
+
+/* line 89, ../sass/style.scss */
+.bg-bubbles li:nth-child(6) {
+  left: 90%;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  border-radius: 50em;
+  background: transparent;
+  border: 4px solid #34373B;
+}
+
+/* line 99, ../sass/style.scss */
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  background: transparent;
+  border: 4px solid #34373B;
+}
+
+/* line 108, ../sass/style.scss */
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+  -webkit-animation-duration: 40s;
+  animation-duration: 40s;
+}
+
+/* line 117, ../sass/style.scss */
+.bg-bubbles li:nth-child(9) {
+  left: 30%;
+  width: 140px;
+  height: 140px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+  animation-duration: 40s;
+  border-radius: 50em;
+  background: transparent;
+  border: 4px solid #34373B;
+}
+
+/* line 129, ../sass/style.scss */
+.bg-bubbles li:nth-child(10) {
+  left: 90%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s;
+}
+
+/* line 136, ../sass/style.scss */
+.bg-bubbles li:nth-child(11) {
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+  border-radius: 50em;
+}
+
+/* line 144, ../sass/style.scss */
+.bg-bubbles li:nth-child(12) {
+  left: 55%;
+  width: 175px;
+  height: 175px;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  background: transparent;
+  border: 4px solid #34373B;
+}
+
+/* line 154, ../sass/style.scss */
+.bg-bubbles li:nth-child(13) {
+  left: 65%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+  border-radius: 50em;
+}
+
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-700px) rotate(600deg);
+    opacity: 1;
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-700px) rotate(600deg);
+    opacity: 0;
+  }
+}
+/** END ANIMATED BG **/
+/* line 198, ../sass/style.scss */
+header {
+  width: 100%;
+  height: 10vh;
+  display: table;
+  position: relative;
+}
+
+/* line 204, ../sass/style.scss */
+.header-container {
+  padding: 50px 40px 0;
+  margin: 0 auto;
+}
+
+/* line 208, ../sass/style.scss */
+.logo {
+  float: left;
+  background: url("../img/Logo.svg") no-repeat;
+  width: 182px;
+  height: 25px;
+}
+
+/* line 214, ../sass/style.scss */
+.header-r {
+  float: right;
+}
+
+/* line 217, ../sass/style.scss */
+.email {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  margin-right: 70px;
+  font-size: 1.125em;
+  color: #9B9B9B;
+  display: inline-block;
+  vertical-align: super;
+  transition-duration: 500ms;
+  text-decoration: none;
+}
+
+/* line 228, ../sass/style.scss */
+.social_icon {
+  display: inline-block;
+}
+
+/* line 231, ../sass/style.scss */
+.icon-fb {
+  background: url("../img/Shape.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 20px;
+  transition-duration: 500ms;
+}
+
+/* line 239, ../sass/style.scss */
+.icon-in {
+  background: url("../img/Shape2.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  transition-duration: 500ms;
+}
+
+/* line 246, ../sass/style.scss */
+.main {
+  position: relative;
+  height: 85vh;
+  display: table;
+  width: 100%;
+}
+
+/* line 252, ../sass/style.scss */
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 256, ../sass/style.scss */
+.wrapper {
+  max-width: 1186px;
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+/* line 261, ../sass/style.scss */
+.text-container {
+  max-width: 680px;
+}
+
+/* line 264, ../sass/style.scss */
+.title_text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.25em;
+  margin-top: 40px;
+}
+
+/* line 269, ../sass/style.scss */
+h1 {
+  font-size: 3em;
+  line-height: 70px;
+  margin-bottom: 80px;
+}
+
+/* line 274, ../sass/style.scss */
+span {
+  color: #27CF97;
+}
+
+/* line 277, ../sass/style.scss */
+.container-btn {
+  display: inline-block;
+  position: relative;
+  margin-right: 32px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+/* line 287, ../sass/style.scss */
+.container-btn:last-child {
+  margin-right: 0;
+}
+
+/* line 290, ../sass/style.scss */
+.btn-about {
+  display: inline-block;
+  margin-right: 16px;
+  width: 25px;
+  height: 31px;
+  z-index: 299;
+  background: url("../img/ui-32px-outline-1_edit-74.svg") no-repeat;
+  vertical-align: middle;
+}
+
+/* line 299, ../sass/style.scss */
+.btn-pdf {
+  display: inline-block;
+  margin-right: 16px;
+  width: 31px;
+  height: 31px;
+  background: url("../img/files-32px-outline-3_pdf.svg") no-repeat;
+  vertical-align: middle;
+}
+
+/* form */
+/* line 309, ../sass/style.scss */
+.wrapper-form {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+/* line 313, ../sass/style.scss */
+.header-form {
+  position: relative;
+}
+
+/* line 316, ../sass/style.scss */
+.title-form {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+/* line 320, ../sass/style.scss */
+form {
+  max-width: 800px;
+}
+
+/* line 323, ../sass/style.scss */
+.field {
+  border: 1px solid #979797;
+  background: none;
+  font-size: 1em;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* line 330, ../sass/style.scss */
+.field:focus {
+  outline: none;
+  border: 1px solid #27CF97;
+}
+
+/* line 334, ../sass/style.scss */
+.form-textarea {
+  font-family: 'Space Mono', monospace;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+/* line 340, ../sass/style.scss */
+fieldset {
+  border: none;
+  margin-right: 50px;
+  display: inline-block;
+  width: 46%;
+  margin-bottom: 60px;
+}
+
+/* line 347, ../sass/style.scss */
+input {
+  background: none;
+  border: none;
+  font-family: 'Space Mono', monospace;
+}
+
+/* line 352, ../sass/style.scss */
+.fieldset-no-marg {
+  margin: 0;
+}
+
+/* line 355, ../sass/style.scss */
+.form-name, .form-email {
+  width: 100%;
+  eight: 56px;
+  display: inline-block;
+}
+
+/* line 360, ../sass/style.scss */
+label {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 1.25em;
+}
+
+/* line 365, ../sass/style.scss */
+.btn-send {
+  display: inline-block;
+  /*  width: 29px;
+    height: 28px;
+    vertical-align: middle;
+    background: url("../img/ui-32px-outline-1_send@2x.svg") no-repeat;*/
+}
+
+/** THANKS PAGE **/
+/* line 374, ../sass/style.scss */
+.icon-five {
+  background: url("../img/holidays-64px-outline_dead-hand.svg") no-repeat;
+  width: 120px;
+  height: 121px;
+  margin-bottom: 40px;
+}
+
+/* line 380, ../sass/style.scss */
+.title-thanks {
+  font-size: 2.5em;
+}
+
+/* line 383, ../sass/style.scss */
+.text-thanks {
+  font-size: 1.25em;
+  margin-bottom: 40px;
+}
+
+/* line 387, ../sass/style.scss */
+.arrow {
+  background: url("../img/arrows-32px-outline-1_tail-left.svg");
+  height: 19px;
+  width: 29px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: sub;
+}
+
+/** HOVERS **/
+/* line 396, ../sass/style.scss */
+.email:hover {
+  color: #27CF97;
+}
+
+/* line 399, ../sass/style.scss */
+.icon-fb:hover {
+  background: url("../img/faceb_gr.svg") no-repeat;
+}
+
+/* line 402, ../sass/style.scss */
+.icon-in:hover {
+  background: url("../img/link_green.svg") no-repeat;
+}
+
+/* BUTTON-1 */
+/* line 407, ../sass/style.scss */
+.link {
+  font-size: 1.125em;
+  color: #27CF97;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+/* line 414, ../sass/style.scss */
+.one-h {
+  vertical-align: -webkit-baseline-middle;
+  position: relative;
+  border: 1px solid #27CF97;
+  padding: 20px 30px;
+  z-index: 1;
+  display: inline-block;
+}
+
+/* line 422, ../sass/style.scss */
+.one-h:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  transition: 0.4s all ease;
+  background: #27CF97;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* line 433, ../sass/style.scss */
+.one-h:hover .link {
+  color: #ffffff;
+}
+
+/* line 436, ../sass/style.scss */
+.one-h:hover:before {
+  width: 100%;
+  transition: 0.4s all ease;
+}
+
+/* line 440, ../sass/style.scss */
+.one-h:hover .btn-about {
+  z-index: 299;
+  background: url("../img/pen_white.svg");
+}
+
+/* BUTTON-2 */
+/* line 446, ../sass/style.scss */
+.link-2 {
+  font-size: 1.125em;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+/* line 453, ../sass/style.scss */
+.two-h {
+  vertical-align: -webkit-baseline-middle;
+  position: relative;
+  border: 1px solid #ffffff;
+  padding: 20px 30px;
+  z-index: 1;
+  display: inline-block;
+}
+
+/* line 461, ../sass/style.scss */
+.two-h:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  transition: 0.4s all ease;
+  background: #ffffff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* line 472, ../sass/style.scss */
+.two-h:hover .link-2 {
+  color: #27CF97;
+}
+
+/* line 475, ../sass/style.scss */
+.two-h:hover:before {
+  width: 100%;
+  transition: 0.4s all ease;
+}
+
+/* line 479, ../sass/style.scss */
+.two-h:hover .btn-pdf {
+  z-index: 299;
+  background: url("../img/pdf-green.svg");
+}
+
+/* BUTTON-send */
+/* line 485, ../sass/style.scss */
+.link-3 {
+  font-size: 1.125em;
+  color: #27CF97;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: super;
+}
+
+/* line 492, ../sass/style.scss */
+.send-h {
+  font-size: 1.125em;
+  font-family: 'Space Mono', monospace;
+  position: relative;
+  border: 1px solid #27CF97;
+  padding: 22px 56px;
+  z-index: 1;
+  background: none;
+  display: inline-block;
+}
+
+/* line 502, ../sass/style.scss */
+.send-h:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  transition: 0.4s all ease;
+  background: #27CF97;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* line 513, ../sass/style.scss */
+.send-h:hover .link-3 {
+  color: #ffffff;
+}
+
+/* line 516, ../sass/style.scss */
+.send-h:hover:before {
+  width: 100%;
+  transition: 0.4s all ease;
+}
+
+/* line 520, ../sass/style.scss */
+.send-h:hover .btn-send {
+  z-index: 299;
+  content: url("../img/ui-32px-outline-1_send_white@2x.svg");
+}
+
+/* BUTTON-thanks */
+/* line 525, ../sass/style.scss */
+.btn-main {
+  font-size: 1.125em;
+  color: #27CF97;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* line 531, ../sass/style.scss */
+.main-h {
+  vertical-align: -webkit-baseline-middle;
+  position: relative;
+  border: 1px solid #27CF97;
+  padding: 20px 30px;
+  z-index: 1;
+  display: inline-block;
+}
+
+/* line 539, ../sass/style.scss */
+.main-h:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  transition: 0.4s all ease;
+  background: #27CF97;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* line 550, ../sass/style.scss */
+.main-h:hover .btn-main {
+  color: #ffffff;
+}
+
+/* line 553, ../sass/style.scss */
+.main-h:hover:before {
+  width: 100%;
+  transition: 0.4s all ease;
+}
+
+/* line 557, ../sass/style.scss */
+.main-h:hover .arrow {
+  z-index: 299;
+  background: url("../img/arrows-32px-outline-1_tail-left-white.svg");
+}
+
+/* MEDIA */
+@media only screen and (max-width: 1024px) {
+  /* line 563, ../sass/style.scss */
+  body {
+    background: url("../img/BG_1024.png");
+  }
+}
+@media only screen and (max-width: 826px) {
+  /* line 568, ../sass/style.scss */
+  fieldset, .fieldset-no-marg {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* line 573, ../sass/style.scss */
+  .send-h {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 578, ../sass/style.scss */
+  body {
+    background: url("../img/BG_720.png");
+  }
+
+  /* line 581, ../sass/style.scss */
+  h1 {
+    font-size: 2.25em;
+    line-height: 60px;
+  }
+
+  /* line 585, ../sass/style.scss */
+  .one-h, .two-h {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 589, ../sass/style.scss */
+  .one-h {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 595, ../sass/style.scss */
+  h1 {
+    font-size: 2em;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  /* line 600, ../sass/style.scss */
+  .header-r {
+    margin-top: 20px;
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+
+  /* line 606, ../sass/style.scss */
+  .email {
+    float: left;
+    margin-right: 0;
+  }
+
+  /* line 610, ../sass/style.scss */
+  .social_icon {
+    float: right;
+  }
+}
+@media only screen and (max-width: 540px) {
+  /* line 615, ../sass/style.scss */
+  h1 {
+    font-size: 1.75em;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 461px) {
+  /* line 622, ../sass/style.scss */
+  body {
+    background: url("../img/BG_320.png");
+  }
+
+  /* line 625, ../sass/style.scss */
+  .email {
+    font-size: 0.875em;
+  }
+
+  /* line 628, ../sass/style.scss */
+  .title-text {
+    font-size: 0.875em;
+  }
+
+  /* line 631, ../sass/style.scss */
+  h1 {
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+
+  /* line 635, ../sass/style.scss */
+  .link, .link-2, .link-3, .btn-main {
+    font-size: 0.85em;
+  }
+
+  /* line 638, ../sass/style.scss */
+  .header-container {
+    padding: 30px 20px 0;
+  }
+
+  /* line 641, ../sass/style.scss */
+  .wrapper {
+    padding: 0 20px;
+  }
+  .btn-about {
+    width: 18px;
+    height: 23px;
+    background: url("../img/Edit icon small green.svg");
+  }
+  .one-h:hover .btn-about {
+    background: url("../img/Edit icon small white.svg");
+  }
+  .btn-pdf {
+    width: 22px;
+    height: 23px;
+    background: url("../img/Pdf small white.svg");
+  }
+  .two-h:hover .btn-pdf {
+    background: url("../img/pdf small green.svg");
+  }
+}

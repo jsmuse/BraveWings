@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BraveWings-DesktopHD" transform="translate(-1376.000000, -49.000000)" fill-rule="nonzero" fill="#27CF97">
+            <path d="M1399,49 L1377,49 C1376.4,49 1376,49.4 1376,50 L1376,72 C1376,72.6 1376.4,73 1377,73 L1399,73 C1399.6,73 1400,72.6 1400,72 L1400,50 C1400,49.4 1399.6,49 1399,49 Z M1383.1,69.5 L1379.6,69.5 L1379.6,58 L1383.2,58 L1383.2,69.5 L1383.1,69.5 Z M1381.3,56.4 C1380.2,56.4 1379.2,55.5 1379.2,54.3 C1379.2,53.2 1380.1,52.2 1381.3,52.2 C1382.4,52.2 1383.4,53.1 1383.4,54.3 C1383.4,55.5 1382.5,56.4 1381.3,56.4 Z M1396.5,69.5 L1392.9,69.5 L1392.9,63.9 C1392.9,62.6 1392.9,60.9 1391.1,60.9 C1389.2,60.9 1389,62.3 1389,63.8 L1389,69.5 L1385.4,69.5 L1385.4,58 L1388.8,58 L1388.8,59.6 L1388.8,59.6 C1389.3,58.7 1390.4,57.8 1392.2,57.8 C1395.8,57.8 1396.5,60.2 1396.5,63.3 L1396.5,69.5 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

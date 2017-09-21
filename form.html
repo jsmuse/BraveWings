@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Brave wings</title>
+	<meta name="theme-color" content="#27CF97">
+	<meta name="description" content="Example pages showing page transitions using minimal JS and CSS">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/fav-16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/fav-32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/fav-96.png" sizes="96x96">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/normalize.css" />
+	<link rel="stylesheet" href="stylesheets/style.css" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#form").submit(function(e) {
+				e.preventDefault(); //устанавливаем событие отправки для формы с id=form
+				var form_data = $(this).serialize();
+				console.log(form_data); //собераем все данные из формы
+				$.post('/form_processing.php', form_data).then(function(res) {
+					if (res === 'success') {
+						window.location.assign('/thanks.html');
+					}
+					if (res === 'error') {
+						alert('Something went wrong. Please, try again.');
+					}
+				})
+			});
+		});
+
+		$.post('/form_processing.php', form_data).then(function(res) {
+			if (res.body === 'success') {
+				alert('Your message has been sended');
+			}
+			if (res.body === 'error') {
+				alert('Something went wrong. Please, try again.');
+			}
+		})
+
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-101171087-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div class="animateme">
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<header class="header-form">
+		<div class="header-container clearfix">
+			<a href="http://bravewings.io" class="logo"></a>
+			<div class="header-r">
+				<a href="mailto:hi@bravewings.io" class="email">hi@bravewings.io</a>
+				<div class="social_icon">
+					<a href="http://bravewings.io" class="icon-fb"></a>
+					<a href="http://bravewings.io" class="icon-in"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper wrapper-form">
+		<h1 class="title-form">Let's your product fly</h1>
+		<form class="clearfix" id="form" method="POST" action="form_processing.php">
+			<label>Tell us about your product</label>
+			<textarea name="message" class="form-textarea field" placeholder="Type of product, idea, goals, problems etc." autofocus="on" cols="" rows="" maxlength="1000" requaired></textarea>
+			<fieldset>
+				<legend><label>What is your name?</label></legend>
+				<input name="c-name" class="form-name field" type="text" autocomplete="on" maxlength="100" placeholder="John Doe" requaired/>
+			</fieldset>
+			<fieldset class="fieldset-no-marg">
+				<legend><label>Your email</label></legend>
+				<input name="email" class="form-email field" type="email" autocomplete="on" maxlength="100" placeholder="bestmailever@mail.com" requaired/>
+			</fieldset>
+
+			<button type="submit" class="send-h">
+              <img src="img/ui-32px-outline-1_send@2x.svg" class="btn-send">
+              <p class="link-3">Send</p>
+            </button>
+
+
+		</form>
+	</div>
+
+
+</body>
+
+</html>

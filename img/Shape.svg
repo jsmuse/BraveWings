@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="BraveWings-DesktopHD" transform="translate(-1331.000000, -49.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M1354,49 L1332,49 C1331.44772,49 1331,49.44771 1331,50 L1331,72 C1331,72.55228 1331.44772,73 1332,73 L1344,73 L1344,64 L1341,64 L1341,60 L1344,60 L1344,57.41269 C1344,54.31281 1345.8933,52.62486 1348.65861,52.62486 C1349.98322,52.62486 1351.12166,52.72348 1351.45343,52.76756 L1351.45343,56.00712 L1349.53554,56.00799 C1348.03161,56.00799 1347.74041,56.72264 1347.74041,57.77133 L1347.74041,60 L1352.18085,60 L1351.18085,64 L1347.74041,64 L1347.74041,73 L1354,73 C1354.55228,73 1355,72.55228 1355,72 L1355,50 C1355,49.44771 1354.55228,49 1354,49 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Brave wings</title>
+	<meta name="theme-color" content="#27CF97">
+	<meta name="description" content="Example pages showing page transitions using minimal JS and CSS">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/fav-16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/fav-32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/fav-96.png" sizes="96x96">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/normalize.css" />
+	<link rel="stylesheet" href="stylesheets/style.css" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#form").submit(function(e) {
+				e.preventDefault(); //устанавливаем событие отправки для формы с id=form
+				var form_data = $(this).serialize(); //собераем все данные из формы
+				$.post('/form_processing.php', form_data).then(function(res) {
+					if (res.body === 'success') {
+						alert('Your message has been sended');
+					}
+					if (res.body === 'error') {
+						alert('Something went wrong. Please, try again.');
+					}
+				})
+			});
+		});
+
+		$.post('/form_processing.php', form_data).then(function(res) {
+			if (res.body === 'success') {
+				alert('Your message has been sended');
+			}
+			if (res.body === 'error') {
+				alert('Something went wrong. Please, try again.');
+			}
+		})
+
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-101171087-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div class="animateme">
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<header class="header-form">
+		<div class="header-container clearfix">
+			<a href="http://bravewings.io" class="logo"></a>
+			<div class="header-r">
+				<a href="mailto:hi@bravewings.io" class="email">hi@bravewings.io</a>
+				<div class="social_icon">
+					<a href="http://bravewings.io" class="icon-fb"></a>
+					<a href="http://bravewings.io" class="icon-in"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="container">
+			<div class="wrapper">
+				<div class="icon-five"></div>
+				<p class="title-thanks">Great. Hold five!</p>
+				<p class="text-thanks title_text">Soon we contact you</p>
+
+				<a class="main-h" href="http://bravewings.io">
+					<div class="arrow"></div>
+					<p class="btn-main">Back to main</p>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

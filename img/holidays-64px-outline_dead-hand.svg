@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="121px" height="121px" viewBox="0 0 121 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>holidays-64px-outline_dead-hand</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Thanks-popup" transform="translate(-137.000000, -215.000000)" stroke="#FFFFFF">
+            <g id="holidays-64px-outline_dead-hand" transform="translate(137.500000, 215.500000)">
+                <path d="M36,40.2041512 L36,12 C36,7.5999984 39.5999984,4 44,4 L44,4 C48.4000016,4 52,7.5999984 52,12 L52,40" id="Shape"></path>
+                <path d="M68,40 L68,8 C68,3.5999984 64.4000016,0 60,0 L60,0 C55.5999984,0 52,3.5999984 52,8 L52,8 L52,12" id="Shape"></path>
+                <path d="M68,12 C68,7.5999984 71.5999984,4 76,4 C80.4000016,4 84,7.5999984 84,12 L84,40" id="Shape"></path>
+                <path d="M84,24 C84,19.5999984 87.5999984,16 92,16 C96.4000016,16 100,19.5999984 100,24 L100,45.5" id="Shape-Copy"></path>
+                <path d="M42,120 L41.9956818,89.9349136 C32.3502198,83.4764328 26,72.479805 26,60 L26,36 C33.7319946,36 40,42.2680054 40,49.9999848 L40,56 C48.8365554,56 56,63.1634446 56,72" id="Shape"></path>
+                <path d="M100,44 L100,60.0000762 C100,70.6613998 95.36557,80.2402954 88,86.8308638 L88,120" id="Shape"></path>
+                <polyline id="Shape" stroke-linecap="square" points="0 120 56 120 100 120 120 120"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
